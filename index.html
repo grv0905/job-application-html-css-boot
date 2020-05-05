@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title >Online Job Application Form</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      <script src="index.js"></script>
+ 
+</head>
+<body>
+	<form>
+		<h1 class="text-center">Job Application Form</h1>
+
+		<!--Personal Information-->
+		<section id="personal-info">
+			<h2>Personal Information</h2>
+			<div class="container">
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control" placeholder="First name">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Last name">
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Father's name">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Mother's name">
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Home Phone">
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Mobile Number">
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type = "text" class="form-control" id = "datepicker-13" placeholder="Date of Birth">
+
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Place of Birth">
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="email" class="form-control" id="inputEmail4" placeholder="email@example.com">
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="inputAddress" placeholder="Address">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<legend class="col-form-label pt-0" for="inputCity">City</legend>
+							<input type="text" class="form-control" id="inputCity">
+						</div>
+						<div class="form-group col-md-4">
+							<legend class="col-form-label pt-0" for="inputState">State</legend>
+							<select id="inputState" class="form-control">
+								<option selected>Choose...</option>
+								<option value=”Andhra Pradesh”>Andhra Pradesh</option>
+								<option value=”Andaman and Nicobar Islands”>Andaman and Nicobar Islands</option>
+								<option value=”Arunachal Pradesh”>Arunachal Pradesh</option>
+								<option value=”Assam”>Assam</option>
+								<option value=”Bihar”>Bihar</option>
+								<option value=”Chandigarh”>Chandigarh</option>
+								<option value=”Chhattisgarh”>Chhattisgarh</option>
+								<option value=”Dadar and Nagar Haveli”>Dadar and Nagar Haveli</option>
+								<option value=”Daman and Diu”>Daman and Diu</option>
+								<option value=”Delhi”>Delhi</option>
+								<option value=”Lakshadweep”>Lakshadweep</option>
+								<option value=”Puducherry”>Puducherry</option>
+								<option value=”Goa”>Goa</option>
+								<option value=”Gujarat”>Gujarat</option>
+								<option value=”Haryana”>Haryana</option>
+								<option value=”Himachal Pradesh”>Himachal Pradesh</option>
+								<option value=”Jammu and Kashmir”>Jammu and Kashmir</option>
+								<option value=”Jharkhand”>Jharkhand</option>
+								<option value=”Karnataka”>Karnataka</option>
+								<option value=”Kerala”>Kerala</option>
+								<option value=”Madhya Pradesh”>Madhya Pradesh</option>
+								<option value=”Maharashtra”>Maharashtra</option>
+								<option value=”Manipur”>Manipur</option>
+								<option value=”Meghalaya”>Meghalaya</option>
+								<option value=”Mizoram”>Mizoram</option>
+								<option value=”Nagaland”>Nagaland</option>
+								<option value=”Odisha”>Odisha</option>
+								<option value=”Punjab”>Punjab</option>
+								<option value=”Rajasthan”>Rajasthan</option>
+								<option value=”Sikkim”>Sikkim</option>
+								<option value=”Tamil Nadu”>Tamil Nadu</option>
+								<option value=”Telangana”>Telangana</option>
+								<option value=”Tripura”>Tripura</option>
+								<option value=”Uttar Pradesh”>Uttar Pradesh</option>
+								<option value=”Uttarakhand”>Uttarakhand</option>
+								<option value=”West Bengal”>West Bengal</option>
+
+
+							</select>
+						</div>
+						<div class="form-group col-md-2">
+							<legend class="col-form-label pt-0"for="inputZip">Zip</legend>
+							<input type="text" class="form-control" id="inputZip">
+						</div>
+					</div>
+				</form>
+				<fieldset class="form-group">
+					<div class="row">
+						<legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+						<div class="col-sm-10">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+								<label class="form-check-label" for="gridRadios1">
+									Male
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+								<label class="form-check-label" for="gridRadios2">
+									Female
+								</label>
+							</div>
+
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-group row">
+					<legend class="col-form-label col-sm-2 pt-0">Languages known</legend>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Hindi
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								English
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Marathi
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Gujrati
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+
+					<legend class="col-form-label col-sm-2 pt-0">Interests</legend>
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Travelling
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Dancing
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Reading
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Cooking
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1">
+							<label class="form-check-label" for="gridCheck1">
+								Fitness
+							</label>
+						</div>
+					</div>
+				</div>
+
+
+				<form>
+					<div class="row">
+						<div class="col">
+
+							<legend class="col-form-label pt-0">Highest Qualification</legend>
+							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option selected>Choose...</option>
+								<option value="1">High School</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Under Graduate</option>
+								<option value="3">Post Graduate</option>
+								<option value="3">Phd Holder</option>
+							</select>
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Year of Passing</legend>
+							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option selected>Choose...</option>
+								<option value="1">2015</option>
+								<option value="2">2016</option>
+								<option value="3">2017</option>
+								<option value="4">2018</option>
+								<option value="5">2019</option>
+								<option value="6">2020</option>
+							</select>
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Nationality</legend>
+							<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+								<option selected>Choose...</option>
+								<option value="1">Indian</option>
+								<option value="2">American</option>
+								<option value="3">Others</option>
+							</select>
+						</div>
+					</div>
+				</form>
+				<form>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<legend class="col-form-label pt-0">About Yourself</legend>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="form-group">	
+								<legend class="col-form-label pt-0">Govt ID</legend>
+								<input type="text" class="form-control" placeholder="Adhaar No.">
+								<input type="text" class="form-control" placeholder="PAN No.">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<!--Educational Details-->
+		<section class="education">	
+			<h2>Educational Details</h2>
+			<div class="container horizontal-scrollable">
+				<div class="row">
+					<div class="col">
+
+						<legend class="col-form-label pt-0">Qualification</legend>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>1.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>2.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>3.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>4.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>5.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>6.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+					</div>
+					<div class="col">
+
+						<legend class="col-form-label pt-0">Institute</legend>
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+					</div>
+					<div class="col">
+
+						<legend class="col-form-label pt-0">Year of Passing</legend>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>1.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>2.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>3.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>4.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>5.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>
+						<select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+							<option selected>6.Choose...</option>
+							<option value="1">High School</option>
+							<option value="2">Intermediate</option>
+							<option value="3">Under Graduate</option>
+							<option value="3">Post Graduate</option>
+							<option value="3">Phd Holder</option>
+						</select>	
+					</div>
+					<div class="col">
+
+						<legend class="col-form-label pt-0">Marks Obtained</legend>
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+
+			</div>
+		</section>
+		<!--Work Experience-->
+		<section class="work1">
+			<div id="Work-Experience1">
+				<h2>Work Experience 1</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<legend class="col-form-label pt-0">Company Address</legend>
+
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Work/Role</legend>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Duration</legend>
+							<div class="row">
+								<div class="col">
+									<input type = "text" class="form-control" id = "datepicker-from-1" placeholder="from">			
+								</div>
+								<div class="col">
+									<input type = "text" class="form-control" id = "datepicker-to-1" placeholder="to">			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="work2">
+			<div id="Work-Experience2">
+				<h2>Work Experience 2</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<legend class="col-form-label pt-0">Company Address</legend>
+
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Work/Role</legend>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Duration</legend>
+							<div class="row">
+								<div class="col">
+									<input type = "text" class="form-control" id = "datepicker-from-2" placeholder="from">			
+								</div>
+								<div class="col">
+									<input type = "text" class="form-control" id = "datepicker-to-2" placeholder="to">			
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--other details-->
+		<section class="others">
+			<div id="Other-Details">
+				<h2>Other Details</h2>
+				<div class="container">			
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-label col-sm-4 pt-0">Job type</legend>
+							<div class="col-sm-8">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" >
+									<label class="form-check-label" for="gridRadios1">
+										Part-time
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Full-time
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Contract
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
+
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-label col-sm-4 pt-0">Prefered Location</legend>
+							<div class="col-sm-8">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+									<label class="form-check-label" for="gridRadios1">
+										Delhi
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Banglore
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Chennai
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										Ahemdabaad
+									</label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
+
+
+					<div class="row">
+						<div class="col">
+							<legend class="col-form-label pt-0">Date of joining</legend>
+									<input type = "text" class="form-control" id = "datepicker-joining">	
+						</div>
+						<div class="col">
+							<legend class="col-form-label pt-0">Time of joining</legend>
+							<input type="text" class="form-control">
+						</div>
+					</div>
+
+
+					<fieldset class="form-group">
+						<div class="row">
+							<legend class="col-form-label col-sm-4 pt-0">Willing to relocate?</legend>
+							<div class="col-sm-8">
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+									<label class="form-check-label" for="gridRadios1">
+										Yes
+									</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+									<label class="form-check-label" for="gridRadios2">
+										No
+									</label>
+								</div>
+
+							</div>
+						</div>
+					</fieldset>
+					<div class="text-center">
+						<button class="btn btn-primary">Submit</button>
+					</div>	
+				</div>
+
+			</div>
+		</section>
+	</form>
+
+
+
+</body>
+</html>

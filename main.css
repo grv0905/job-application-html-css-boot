@@ -1,0 +1,76 @@
+
+
+
+body{
+	
+	background-image: linear-gradient(to left,white,#f6a828);
+	margin: 0px;
+}
+h2{
+	background-color: #222f3e;
+	padding: 10px;
+	color: #f6a828;
+	text-align:center;
+
+}
+
+h1{
+	background-image: linear-gradient(to right,#222f3e,#f6a828);
+	padding: 10px;
+	text-align:center;
+	color: white;
+	
+}
+legend{
+	font-weight: 500;
+}
+
+input{
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 15px !important; 
+}
+
+::placeholder,option,legend,h1,h2,label{
+	font-family: 'Baloo Bhaina 2', cursive;
+}
+select option:first-child{
+  	font-family: 'Baloo Bhaina 2', cursive;
+
+}
+textarea{
+	border-radius: 10px;
+}
+input:focus{
+	outline: none;
+	border: solid black;
+}
+textarea:focus{
+	outline: none;
+	border: solid black;
+}
+section{
+	margin: 20px auto;
+}
+.btn{
+background-color: #222f3e !important;
+color:#f6a828 !important;
+border:none;
+font-family:'Baloo Bhaina 2', cursive; 
+}
+.horizontal-scrollable input{
+		 margin-bottom: 8px !important;
+	}
+
+@media (max-width: 768px) {
+	.row{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.btn{
+		width: 100%;
+	}
+}
+
+
